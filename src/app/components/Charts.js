@@ -13,23 +13,23 @@ const Charts = () => {
     <>
       <section>
         <div className="flex m-4 gap-2 ">
-          <div className="flex-1 px-2 justify-center w-1/3 bg-pavlovaLight shadow rounded h-300px">
+          <div className={`flex-1 px-2 justify-center w-1/3 ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'} shadow rounded max-h-300px`}>
             <div className="p-2 ">
-              <h1 className="text-slate font-bold ">Latest Reading</h1>
-              <p className="font-bold text-indigoDark text-5xl " >1.047</p>
+              <h1 className={`font-bold ${theme === 'dark' ? 'text-pearlGray' : 'text-slate'}`}>Latest Reading</h1>
+              <p className={`  text-5xl  ${theme === 'dark' ? 'text-pearl' : 'text-indigoDark'}`} >1.047</p>
            
             </div>
           </div>
-          <div className="flex-1 px-2 justify-center w-1/3 bg-pavlovaLight shadow rounded max-h-300px">
+          <div className={`flex-1 px-2 justify-center w-1/3 ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'} shadow rounded max-h-300px`}>
             <div className="p-2">
-              <p className="text-slate font-bold">ABV</p>
-              <p className="font-bold text-indigoDark text-5xl">4.8% </p>
+              <p className={`font-bold ${theme === 'dark' ? 'text-pearlGray' : 'text-slate'}`}>ABV</p>
+              <p className={`  text-5xl  ${theme === 'dark' ? 'text-pearl' : 'text-indigoDark'}`}>4.8% </p>
             </div>
           </div>
-          <div className={`flex-1 px-2 justify-center w-1/3 ${theme === 'light' ? 'bg-pavlovaLight' : 'bg-pebble'} shadow rounded max-h-300px`}>
+          <div className={`flex-1 px-2 justify-center w-1/3 ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'} shadow rounded max-h-300px`}>
             <div className="p-2">
-              <p className="text-slate font-bold">Attenuation</p>
-              <p className="font-bold text-indigoDark text-5xl">81% </p>
+              <p className={`font-bold ${theme === 'dark' ? 'text-pearlGray' : 'text-slate'}`}>Attenuation</p>
+              <p className={`  text-5xl  ${theme === 'dark' ? 'text-pearl' : 'text-indigoDark'}`}>81% </p>
             </div>
           </div>
           
@@ -37,21 +37,27 @@ const Charts = () => {
       </section>
 
       <section className="flex my-4 px-4 gap-3 rounded">
-        <div className="w-full h-[300px] bg-pavlovaLight rounded-2xl">
+        <div className={`w-full h-[300px] rounded-2xl ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'}`}>
         <AreaChartPlot/>
         </div>
 
         {/*<div className="w-1/2 h-[300px] bg-gray-700 rounded">ddd</div> */}
       </section>
 
-      <section className=" flex my-4 px-4 gap-2">
-        <div className=" w-full h-100 bg-pavlovaLight rounded py-4 my-6 px-3">
-    <h1 className=" pb-4 text-indigoDark font-bold">New Reading</h1>
+      <section className=" flex my-4 px-4 gap-2 md:flex-cols">
+        <div className={`w-1/3 h-100 ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'} rounded py-4  px-3`}>
+        <h1 className={`pb-4 font-bold ${theme === 'dark' ? 'text-pearl' : 'text-indigoDark'}`}>New Reading</h1>
       <NewReading />
         </div>
-    {/*    <div className=" w-1/3 h-[250px] bg-pavlovaLight rounded">sdsdsds</div>
-        <div className=" w-1/3 h-[250px] bg-pavlovaLight rounded">sff</div>*/}
-      </section>
+        <div className={`w-1/3 h-[250px] rounded ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'} `}>
+
+
+          
+        </div>
+        <div className={`w-1/3 h-[250px] rounded ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'} `}>sff</div>
+        
+        
+              </section>
     </>
   );
 };

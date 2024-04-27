@@ -1,5 +1,10 @@
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
+
+import { useTheme } from "../hooks/useTheme";
+
 const AreaChartPlot = () => {
+  const { theme } = useTheme();
+
     const data = [
       {
         "year": "2016",
@@ -44,11 +49,11 @@ const AreaChartPlot = () => {
               margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
 
 <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="year" />
-              <YAxis />
+              <XAxis dataKey="year" stroke= { ` ${theme == "dark" ?  '#B3B2B4' : '#858283'} `}   />
+              <YAxis  stroke= { ` ${theme == "dark" ?  '#B3B2B4' : '#858283'} `}   />
               <Tooltip />
-              <Line type="monotone" dataKey="Iphone" stroke="#F27405"  activeDot={{ r: 2 }}/>
-              <Line type="monotone" dataKey="Samsung" stroke="#270140"  />
+              <Line type="monotone" dataKey="Iphone" stroke="#F27405" strokeWidth="3"  activeDot={{ r: 2 }}/>
+              <Line type="monotone" dataKey="Samsung" stroke="#5A0F8C"  strokeWidth="3"/>
             </LineChart>
           </ResponsiveContainer>
         </>

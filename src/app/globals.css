@@ -4,8 +4,7 @@
 
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: #F2EACE
+
 }
 
 @layer utilities {

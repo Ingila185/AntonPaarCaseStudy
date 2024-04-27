@@ -34,6 +34,13 @@ const config: Config = {
         'slate':'#6D6C66',
         'successTeal':'#008080',
         'spearmint':'#94C973',
+        'charcoal':'#150D1A',
+        'coal':'#212121',
+        'pearl':'#FFFCF3',
+        'gray':'#7B7A7C',
+        'pearlGray':'#B3B2B4',
+
+
         
     },  
   },

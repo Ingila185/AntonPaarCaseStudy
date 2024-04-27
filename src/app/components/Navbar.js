@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center">
 
-          <button className='bg-pavlovaLight p-4 rounded-3xl shadow' onClick={toggleTheme} >
+          <button className={`p-4 rounded-3xl shadow ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'}`} onClick={toggleTheme} >
             <Image src={theme == 'light' ? 'toDarkMode.svg' : 'toLightMode.svg'} width={15} height={15} alt="theme" />
           </button>
         </div>
