@@ -32,7 +32,10 @@ const config: Config = {
         'nectarine':'#F27405',
         'lavender':'#270140',
         'slate':'#6D6C66',
-    },
+        'successTeal':'#008080',
+        'spearmint':'#94C973',
+        
+    },  
   },
   plugins: [],
 };

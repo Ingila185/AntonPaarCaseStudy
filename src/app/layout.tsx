@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ThemesProvider } from './hooks/useTheme'; // Import your ThemesProvider
 
 
 export const metadata: Metadata = {
@@ -14,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+          <ThemesProvider>
       <body>{children}</body>
+      </ThemesProvider>
     </html>
   );
 }

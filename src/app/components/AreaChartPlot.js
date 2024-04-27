@@ -47,8 +47,8 @@ const AreaChartPlot = () => {
               <XAxis dataKey="year" />
               <YAxis />
               <Tooltip />
-              <Line type="monotone" dataKey="Iphone" stroke="#8884d8"  activeDot={{ r: 8 }}/>
-              <Line type="monotone" dataKey="Samsung" stroke="#82ca9d"  />
+              <Line type="monotone" dataKey="Iphone" stroke="#F27405"  activeDot={{ r: 2 }}/>
+              <Line type="monotone" dataKey="Samsung" stroke="#270140"  />
             </LineChart>
           </ResponsiveContainer>
         </>
