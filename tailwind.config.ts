@@ -37,6 +37,7 @@ const config: Config = {
         'charcoal':'#150D1A',
         'coal':'#212121',
         'pearl':'#FFFCF3',
+        'flour':'#fffcf3',
         'gray':'#7B7A7C',
         'pearlGray':'#B3B2B4',
 

@@ -37,7 +37,7 @@ const Charts = () => {
       </section>
 
       <section className="flex my-4 px-4 gap-3 rounded">
-        <div className={`w-full h-[300px] rounded-2xl ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'}`}>
+        <div className={`w-full h-[300px] rounded-2xl ${theme === 'dark' ? 'bg-coal' : 'bg-flour'}`}>
         <AreaChartPlot/>
         </div>
 
@@ -49,13 +49,13 @@ const Charts = () => {
         <h1 className={`pb-4 font-bold ${theme === 'dark' ? 'text-pearl' : 'text-indigoDark'}`}>New Reading</h1>
       <NewReading />
         </div>
-        <div className={`w-1/3 h-[250px] rounded ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'} `}>
+        <div className={`w-2/3 h-100 rounded ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'} `}>
 
 
           
         </div>
-        <div className={`w-1/3 h-[250px] rounded ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'} `}>sff</div>
-        
+     {/* <div className={`w-1/3 h-[250px] rounded ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'} `}>sff</div>
+        */ }  
         
               </section>
     </>
