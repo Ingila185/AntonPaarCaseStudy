@@ -19,7 +19,7 @@ function formatDate(timestamp) {
 
     useEffect(() => {
       getData().then((res) => {
-        //console.log(res);
+        console.log(res);
     
         var transformedData = res.measuredAts.map((time, idx) => ({
           //'measuredAt': new Date(time * 1000).toString("dd-mm-yyyy"),
@@ -33,13 +33,13 @@ function formatDate(timestamp) {
         
 
       });
-    }, []);
+    });
 
     return (
         <>
-        {loading ? (<center>Loading....</center>) : (          
+        {loading ? (<div className='p-2 align-center justify-center items-center'>Loading....</div>) : (          
         <ResponsiveContainer width="100%" height="100%" >
-            <LineChart width={730} height={250} data={plotData}
+            <LineChart width={730} height={350} data={plotData.slice(0,20)}
               margin={{ top: 10, right: 30, left: 0, bottom: 0 } }  >  
 
         <CartesianGrid strokeDasharray="3 3" />
