@@ -37,11 +37,12 @@ function formatDate(timestamp) {
 
     return (
         <>
-        {loading ? (<center>Loading....</center>) : (          <ResponsiveContainer width="100%" height="100%" >
+        {loading ? (<center>Loading....</center>) : (          
+        <ResponsiveContainer width="100%" height="100%" >
             <LineChart width={730} height={250} data={plotData}
               margin={{ top: 10, right: 30, left: 0, bottom: 0 } }  >  
 
-<CartesianGrid strokeDasharray="3 3" />
+        <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="measuredAt"  stroke= { ` ${theme == "dark" ?  '#B3B2B4' : '#858283'} `}   />
               <YAxis  stroke= { ` ${theme == "dark" ?  '#B3B2B4' : '#858283'} `}   />
               <Tooltip />
