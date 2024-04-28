@@ -16,7 +16,7 @@ const Charts = () => {
 
     <section className="align-center items-center ">
     <div className="flex flex-col m-4 gap-2 align-center items-center justify-center ">
-    <h1 className={`text-4xl underline font-bold  ${theme === 'dark' ? 'text-pearl' : 'text-indigoDark'}`} >Bell's IPA Oct.22</h1>
+    <h1 className={`text-4xl underline font-bold  ${theme === 'dark' ? 'text-pearl' : 'text-indigoDark'}`} >Bell IPA Oct.22</h1>
     <img className="w-8 h-8 rounded-full" src="male.png" alt="Neil image" />
     <p className={`font-bold ${theme === 'dark' ? 'text-pearlGray' : 'text-slate'}`}>Latest Reading 1 hr ago</p>
 </div>
