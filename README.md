@@ -48,7 +48,7 @@ The easiest way to access the Anton Paar Case Study app is to use the [Vercel Pl
 
 ## To Do / Issues
 
-- I need to make necessary data transformations (sampling, aggregation, windowing, etc.) to reduce the data points so that the graph is more understandble and trends are more readable.
+- I need to make necessary data transformations (sampling, aggregation, windowing, etc.) to reduce the data points so that the graph is more understandble and trends are more readable. The graph accurately gets updated with successful /write API calling.
 
 
 ## Technologies / Frameworks
