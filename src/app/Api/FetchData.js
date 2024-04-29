@@ -9,11 +9,7 @@ export async function getData() {
       }}
         
     const res = await fetch(url, options);
-    //console.log(res)
-
-    // The return value is *not* serialized
-    // You can return Date, Map, Set, etc.
-   
+ 
     if (res.status != 200) {
       // This will activate the closest `error.js` Error Boundary
       throw new Error('Failed to fetch data')

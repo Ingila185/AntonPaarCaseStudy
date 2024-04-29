@@ -52,8 +52,6 @@ const Charts = () => {
         <div className={`w-full h-[300px] rounded-2xl ${theme === 'dark' ? 'bg-coal' : 'bg-flour'}`}>
         <AreaChartPlot/>
         </div>
-
-        {/*<div className="w-1/2 h-[300px] bg-gray-700 rounded">ddd</div> */}
       </section>
 
 
@@ -77,35 +75,7 @@ const Charts = () => {
         </div>
       </div>
       </div>
-      </section>
-
-
-
-    {/* <section className=" flex  my-4 px-4 gap-2 ">
-        <div className="flex m-4 gap-2 md:flex-cols">
-        <div className={`w-1/3 md:w-full h-100 ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'} rounded py-4  px-3`}>
-        <h1 className={`pb-4 font-bold ${theme === 'dark' ? 'text-pearl' : 'text-indigoDark'}`}>New Reading</h1>
-      <NewReading />
-        </div>
-     
-      <div className={`w-1/3 p-4  md:w-full h-100 rounded ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'} `}>
-      <h1 className={`pb-4 font-bold ${theme === 'dark' ? 'text-pearl' : 'text-indigoDark'}`}>Reading List</h1>
-        <ReadingList />
-      </div>
-
-
-      <div className={`w-1/3 p-4 md:w-full h-100 rounded ${theme === 'dark' ? 'bg-coal' : 'bg-pavlovaLight'} `}>
-      <h1 className={`pb-4 font-bold ${theme === 'dark' ? 'text-pearl' : 'text-indigoDark'}`}>Reading List</h1>
-        <ReadingList />
-      </div>
-
-
-
-      </div>
-  </section>*/ }
-
-
-      
+      </section>      
     </>
   );
 };
