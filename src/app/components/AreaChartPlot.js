@@ -46,8 +46,8 @@ function formatDate(timestamp) {
               <XAxis dataKey="measuredAt"  stroke= { ` ${theme == "dark" ?  '#B3B2B4' : '#858283'} `}   />
               <YAxis  stroke= { ` ${theme == "dark" ?  '#B3B2B4' : '#858283'} `}   />
               <Tooltip />
-              <Line type="monotone" dataKey="densities" stroke=  { ` ${theme == "dark" ?  '#F27405' : '#F27405'} `}  strokeWidth="1"  name="Densities"/>
-              <Line type="monotone" dataKey="temperatures" stroke=  { ` ${theme == "dark" ?  '#5A0F8C' : '#270140'} `} strokeWidth="1"  name="Tempratures"/>
+              <Line type="monotone" dataKey="densities" stroke=  { ` ${theme == "dark" ?  '#F27405' : '#F27405'} `}  strokeWidth="2"  name="Densities"/>
+              <Line type="monotone" dataKey="temperatures" stroke=  { ` ${theme == "dark" ?  '#5A0F8C' : '#270140'} `} strokeWidth="2"  name="Tempratures"/>
             </LineChart>
           </ResponsiveContainer>
 )}
