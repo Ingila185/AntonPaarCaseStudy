@@ -8,7 +8,7 @@ const RequestResponse = (props) =>
   <strong className="font-bold">{props.response}</strong>
   <span className="block sm:inline">
   </span>
-  <span className="absolute top-0 bottom-0 right-0 px-4 py-3">
+  <span className="absolute top-0 bottom-0 right-0 px-4 py-3" onClick={props.onClose}>
     <svg className="fill-white h-6 w-6 text-successTeal"
      role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
       <title>Close</title>

@@ -40,6 +40,13 @@ const NewReading = () => {
 
   };
 
+  const handleClose = (event : MouseEvent) =>
+  {
+    event.preventDefault();
+    event.stopPropagation();
+    setSuccess(false);
+  }
+
   const handleDateChange = (event: React.FormEvent<HTMLInputElement>) => {
     setFormData({
       ...formData,
@@ -91,7 +98,7 @@ const NewReading = () => {
       font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Submit</button>
       </div>
       <div className="mb-5">   
-      {success && <RequestResponse response="Success" /> }
+      {success && <RequestResponse response="Success"   onClose={handleClose} /> }
       </div>
     </form>
 
