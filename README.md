@@ -21,15 +21,32 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 To run Cypress e2e tests:
 
+
 ```
 npx cypress open //To open e2e tests in browser
 npx cypress run //To run the tests
 
 ```
-The e2e tests and video is located at: ```cypress/videos``` 
+
+The e2e tests and video is located at: 
+
+```cypress/videos``` 
+
 You can access the source code here [the Anton Paar Case Study repository](https://github.com/Ingila185/AntonPaarCaseStudy) - your feedback and contributions are welcome!
 
 ## Deployed on Vercel
 
 The easiest way to access the Anton Paar Case Study app is to use the [Vercel Platform](https://anton-paar-case-study.vercel.app/).
+
+
+## Assumptions
+
+The dataset is very large that is returned from API, causing potential performance issues of graph plotting. In order to avoid that, the first 20 data points are taken from the data set.
+
+
+## To Do
+
+I need to make necessary data transformations to reduce the data points so that the graph is more accurate and covers the entire data set with optimal performance.
+ 
+
 
