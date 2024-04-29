@@ -19,7 +19,7 @@ function formatDate(timestamp) {
 
     useEffect(() => {
       getData().then((res) => {
-        console.log(res);
+       // console.log(res);
     
         var transformedData = res.measuredAts.map((time, idx) => ({
           //'measuredAt': new Date(time * 1000).toString("dd-mm-yyyy"),
