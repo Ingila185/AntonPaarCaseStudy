@@ -44,7 +44,7 @@ The easiest way to access the Anton Paar Case Study app is to use the [Vercel Pl
 ## Assumptions / Constraints
 
 - The dataset is very large that is returned from API, to optimize page performance, I have used Server Actions in Next.js to perform Server Side rendering and render the fetched data to the client.
-- Due to so many data points being plotted, the graph shows data points very close to each other. This is causing the line graph to appear very wierd and difficult for the user to see the trend. To improve this, I have plotted only the top 20 most recent points on the graph while I work on data sampling techniques to sample the data and plot it more accurately.
+- Due to so many data points being plotted, the graph shows data points very close to each other. This is causing the line graph to appear very wierd and difficult for the user to see the trend.  [See this deployment](https://anton-paar-case-study-3icfhsvg6-ingila185s-projects.vercel.app/). To improve this, I have plotted only the top 20 most recent points on the graph while I work on data sampling techniques to sample the data and plot it more accurately.
 
 ## To Do / Issues
 
